@@ -1,0 +1,35 @@
+extends ./layout/index
+
+block slider
+        .slider 
+                h1 Rio de Janeiro
+                em aventura
+
+block contenido
+       main.container.mt-5 
+                h2.text-center.mb-5 Sobre Nosotros
+                .row.mb-5 
+                        .col-md-6
+                                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, laborum? Quam, tempore! Ratione pariatur eaque nesciunt rerum velit neque maxime omnis nostrum vero autem suscipit totam, impedit nulla harum! Hic.
+                                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, laborum? Quam, tempore! Ratione pariatur eaque nesciunt rerum velit neque maxime omnis nostrum vero autem suscipit totam, impedit nulla harum! Hic.
+                        .col-md-6
+                                img(class="img-fluid" src="/img/inicio_nosotros.jpg", alt="img inicio")
+
+                include ./layout/bloque_viajes.pug
+
+                .descuento
+                        .container
+                                .row 
+                                        .col-md-6 
+                                                .contenido 
+                                                        h3 20% de Descuento 
+                                                        p.titulo     Viaje a Canada
+                                                        p.fecha 20 de marzo de 20023
+                                                        p.precio 2.500€
+
+                .container 
+                        h2.mt-5.text-center Testimoniales
+                        include ./layout/bloque_testimoniales
+                
+
+                
