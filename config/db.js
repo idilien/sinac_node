@@ -9,7 +9,12 @@ const db = new Sequelize(process.env.DB_NAME,process.env.DB_USER,process.env.DB_
     define: {
         timestamps: false
     },
-
+    dialectOptions: {
+        ssl: {
+          require: true,
+          rejectUnauthorized: false
+        }
+      },
     pool:{
         max:5,
         min:0,
