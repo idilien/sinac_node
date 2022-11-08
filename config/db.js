@@ -9,6 +9,8 @@ const db = new Sequelize(process.env.DB_NAME,process.env.DB_USER,process.env.DB_
     define: {
         timestamps: false
     },
+    
+    operatorAliases: 0,
     dialectOptions: {
         ssl: {
           require: true,
